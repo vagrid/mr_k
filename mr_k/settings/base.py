@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     "livesync",
     "django.contrib.staticfiles",
+
+    "mission.apps.MissionConfig",    
 ]
 
 MIDDLEWARE = [
