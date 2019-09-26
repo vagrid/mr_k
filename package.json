@@ -1,0 +1,28 @@
+{
+  "name": "mr_k",
+  "version": "1.0.0",
+  "description": "Responsive escape game website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o mr_k/static/css/ --recursive",
+    "message": "echo \"sass script test finished!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antoch03/mr_k.git"
+  },
+  "keywords": [
+    "Escape",
+    "game"
+  ],
+  "author": "Anthony Rey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Antoch03/mr_k/issues"
+  },
+  "homepage": "https://github.com/Antoch03/mr_k#readme"
+}

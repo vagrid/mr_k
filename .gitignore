@@ -1,0 +1,10 @@
+
+
+# Ignore repositories
+mr_k/__pycache__/
+mr_k/settings/__pycache__/
+node_modules/
+
+# Ignore files 
+mr_k/db.sqlite3
+
