@@ -1,0 +1,40 @@
+{% load static %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!-- meta tags -->
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv = "x-ua-compatible" content = "ie=edge">
+        {% block meta %}
+        {% endblock %}
+        <!-- meta tags --> 
+        <!-- css -->
+        <link rel = "stylesheet" title = "base css file" type = "text/css" href = "{% static 'css/main.css'%}"/>
+        <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+        {% block css %}
+        {% endblock %}
+        <!-- css -->
+    </head>
+    <body>
+        <header>
+            <nav>
+            </nav>
+        </header>
+
+        {% block content %}
+        {% endblock %}
+        
+        <footer id = "footer">
+        </footer>
+        
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+    </body>
+</html>

@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 from django.core.exceptions import ImproperlyConfigured
-
+from django.utils.translation import ugettext_lazy
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -64,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "livesync.core.middleware.DjangoLiveSyncMiddleware",    
+    "django.middleware.locale.LocaleMiddleware",
 ]
 
 ROOT_URLCONF = 'mr_k.urls'
@@ -121,14 +122,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+LANGUAGES       = (("en", ugettext_lazy("English")),
+                   ("fr", ugettext_lazy("French")),)
+LOCALE_PATHS    = (os.path.join(BASE_DIR, "locale"),)
 USE_I18N = True
+# Localization
+USE_L10N        = True
+# Time zone support 
+USE_TZ          = True
+TIME_ZONE       = "UTC"
 
-USE_L10N = True
-
-USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -136,6 +139,14 @@ USE_TZ = True
 
 STATIC_URL          = "/static/"
 STATICFILES_DIRS    = (os.path.join(BASE_DIR, "static"),)
+
+
+# 
+MEDIA_URL           = "/media/"
+MEDIA_ROOT          = os.path.join(BASE_DIR, "media")
+
+
+
 
 
 

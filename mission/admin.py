@@ -14,3 +14,9 @@ class MissionAdmin(admin.ModelAdmin):
     """
     """
     list_display = ["title"]
+
+    #
+    def get_prepopulated_fields(self, request, obj = None):
+        """
+        """
+        return {"slug": ("title",)}

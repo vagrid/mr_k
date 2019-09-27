@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% block meta %}
+<title>{% trans "Mission a" %} | {% trans "Mr-K Escape Game" %}</title>
+{% endblock %}
+
+{% block content %}
+<main role = "main">
+    <article>
+        {% for each_mission in missions %}
+            {% if each_mission.location.name|lower == location %}
+            <section class = "">
+                <div class = ""><h2>{{ each_mission.title }}</h2></div>
+                <div class = "">
+                <p>{{ each_mission.description }}</p>        
+                </div>
+                <div class = "">
+                    <div class = "polaroid">
+                        <img src = "{{ each_mission.picture.url }}" alt = ""/>
+                        <div class = "">{{ each_mission.polaroid_caption }}</div>
+                    </div>    
+                </div>
+                <div class = "">
+                    {% for i in "12"|make_list%}
+                    <div class = "">
+                        <div class = ""></div>
+                        <div class = "">
+                            {% for number in "12345"|make_list %}
+                            <div class = {% if forloop.counter <= each_mission.difficulty %}"y"{% else%}"n"{% endif %}>
+                                
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class = "">
+                    
+                </div>
+            </section>
+            {% endif %}
+        {% endfor %}   
+    </article>
+</main>
+{% endblock %}
+
