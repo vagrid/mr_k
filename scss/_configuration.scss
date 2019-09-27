@@ -1,5 +1,32 @@
 
 
+/*:::: ::::*/
+$pargaph-font-size:1.1rem;
+$mission-header-font-size:2.5rem;
+
+/*:::: ::::*/ 
+$mission-header-line-height:0.2rem;
+
+/*:::: ::::*/ 
+$third-color:#fff;
+$fourth-color:#000;
+
+/*:::: ::::*/ 
+@font-face {
+    font-family:"special-elite";
+    src: url("../fonts/special-elite/special-elite-regular.ttf");
+}
+@font-face {
+    font-family:"marck-script";
+    src: url("../fonts/marck-script/marck-script-regular.ttf");
+}
+
+
+/*:::: ::::*/
+$font-paragraph:"special-elite";
+$font-header:"marck-script";
+
+
 /*:::: mixins ::::*/
 @mixin easeOut {
     transition: all 600ms ease-out;

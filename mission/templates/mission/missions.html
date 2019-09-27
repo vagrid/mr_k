@@ -15,26 +15,23 @@
     <article>
         {% for each_mission in missions %}
             {% if each_mission.location.name|lower == location %}
-            <section class = "">
-                <div class = ""><h2>{{ each_mission.title }}</h2></div>
-                <div class = "">
+            <section class = "mission">
+                <h2 class = "mission__title">{{ each_mission.title }}</h2>
+                <div class = "mission__description">
                 <p>{{ each_mission.description }}</p>        
                 </div>
-                <div class = "">
-                    <div class = "polaroid">
-                        <img src = "{{ each_mission.picture.url }}" alt = ""/>
-                        <div class = "">{{ each_mission.polaroid_caption }}</div>
-                    </div>    
+                <div class = "polaroid">
+                    <img class = "polaroid__image" src = "{{ each_mission.picture.url }}" alt = ""/>
+                    <div class = "polaroid__caption">{{ each_mission.polaroid_caption }}</div>
+                </div>    
                 </div>
-                <div class = "">
+                <div class = "mission__gauge">
                     {% for i in "12"|make_list%}
-                    <div class = "">
-                        <div class = ""></div>
-                        <div class = "">
+                    <div class = "gauge__container">
+                        <div class = "gauge__title"></div>
+                        <div class = "gauge__bars">
                             {% for number in "12345"|make_list %}
-                            <div class = {% if forloop.counter <= each_mission.difficulty %}"y"{% else%}"n"{% endif %}>
-                                
-                            </div>
+                            <div class = {% if forloop.counter <= each_mission.difficulty %}"gauge__bar gauge__bar--full"{% else%}"gauge__bar gauge__bar--empty"{% endif %}></div>
                             {% endfor %}
                         </div>
                     </div>
