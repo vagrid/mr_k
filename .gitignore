@@ -3,6 +3,7 @@
 # Ignore repositories
 mission/__pycache__/
 mission/migrations/
+mission/templatetags/__pycache__/
 mr_k/__pycache__/
 mr_k/media/
 mr_k/static/fonts/
