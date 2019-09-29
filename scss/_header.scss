@@ -1,1 +1,52 @@
 
+
+.menu {
+
+    position:fixed;
+    top:0;
+    width:100%;
+    height:$menu-height;
+    background-color:$second-color;
+    z-index:2;
+
+    &__nav {
+        display:inline-block;
+        height:100%;
+        list-style-type:none; 
+        text-align:center;
+        //&:first-child {
+        //    margin-left:1.5rem;
+        //}
+
+        //&:last-child {
+        //    margin-right:1.5rem;
+        //}
+        
+    }
+
+    &__item {
+        //float:left;
+        display:inline-block;
+        //height:100%;
+        padding:$menu-height/3.3;
+        background-color:green; 
+    }
+
+    &__link {
+        //display:block;
+        //height:100%;
+        //padding:0 0.75rem; 
+        text-align:center; 
+        text-decoration:none; 
+
+        &:hover {
+            background-color:red;
+        }
+    }
+
+    &__search {
+        float:right;
+        height:100%; 
+        background-color:blue; 
+    }
+}
