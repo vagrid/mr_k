@@ -15,12 +15,35 @@
 {% block content %}
 <main role = "main">
     <article>
-        <section class = "presentation">
-            <h1></h1>
-            <p></p>        
+        <section class = "home">
+            <h1 class = "home__title">{% trans "Mr-K Escape Game: The live escape room game" %}</h1>
+            <p class = "home__description">{% blocktrans %}An escape game is a real life adventure game where you and your team are locked in a room for a given amount of time.<br/><br/>The only option for you to find a way out is by completing your mission, which consists of solving a series of enigmas.</br></br>This is an amazing immersive fictional scenario where you become the heroes.</br><br/>At Mr-K Escape Game, each team gets 60 minutes to escape. A designated game host will look after your game and help you along the way with hints if needed.</br></br>Strength and knowledge will not help you here... Only curiosity and logic will be your friends to make the right deductions and succeed.</br></br>Come test yourself!{% endblocktrans %}
+            </p>        
         </section>
-        <section class = "information">
-            
+        <section class = "home">
+            <div class = "home-container">
+                <div class = "home-container__information">
+                    <h3 class = "home-container__title">{% trans "enigma" %}</h3>
+                    <img class = "home-container__picture" src = "/media/images/enigma.jpg" alt = ""/>
+                    <p class = "home-container__description">{% blocktrans %}You will have to solve puzzles, decipher codes, find clues and hidden keys. You will also need to connect all these elements together in a logical way.<br/><br/>Everything you will need to escape or fulfill your mission will be inside the room.<br/><br/>Let's see if you will be able to discover it!{% endblocktrans %}</p>
+                </div>
+                <div class = "home-container__information">
+                    <h3 class = "home-container__title">{% trans "stopwatch" %}</h3>
+                    <img class = "home-container__picture" src = "/media/images/stopwatch.jpg" alt = ""/>
+                    <p class = "home-container__description">{% blocktrans %}You will have 60 minutes and not a second more! The minutes are running very quickly, so don't waste time!<br/><br/>Don't lose your temper, be fast, punchy and clever.<br/><br/>Don't forget... Your time will be limited!{% endblocktrans %} 
+                    </p>
+                </div>
+                <div class = "home-container__information">
+                    <h3 class = "home-container__title">{% trans "access" %}</h3>
+                    <img class = "home-container__picture" src = "/media/images/access.jpg" alt = ""/>
+                    <p class = "home-container__description"></p>
+                </div>
+                <div class = "home-container__information">
+                    <h3 class = "home-container__title">{% trans "team" %}</h3>
+                    <img class = "home-container__picture" src = "/media/images/team.jpg" alt = ""/>
+                    <p class = "home-container__description"></p>
+                </div>
+            </div>
         </section>
     </article>
 </main>

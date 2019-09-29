@@ -363,6 +363,29 @@ template {
     height: 100%;
     background-color: blue; }
 
+.home {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-family: "special-elite"; }
+  .home__title {
+    margin-top: 4.5rem;
+    font-family: "marck-script"; }
+
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin: 0 auto;
+  background-color: red; }
+  .home-container__title {
+    text-transform: capitalize;
+    background-color: green; }
+  .home-container__picture {
+    width: 100%;
+    height: auto; }
+
 .mission {
   display: grid;
   grid-template-columns: 2fr 1fr;

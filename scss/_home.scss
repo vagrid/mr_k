@@ -1,1 +1,46 @@
 
+
+.home {
+
+    margin:0 auto;
+    width:70%;
+    text-align:center;
+    font-family:$font-paragraph;
+
+    &__title {
+       margin-top:1.5*$menu-height;
+       font-family:$font-header; 
+    
+    }
+
+    &__description {
+    
+    
+    }
+
+}
+.home-container {
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows:auto;
+    grid-gap:1rem;
+    margin:0 auto;
+    background-color:red;
+
+    &__title {
+        text-transform:capitalize;
+       background-color:green; 
+    }
+
+    &__picture {
+        width:100%;
+        height:auto; 
+    }
+
+    &__description {
+    
+    
+    }
+
+}

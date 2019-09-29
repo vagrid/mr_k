@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-29 12:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: mission/templates/mission/missions.html:12
+#: navigation/templates/navigation/faq.html:12
+msgid "Mission a"
+msgstr ""
+
+#: mission/templates/mission/missions.html:12
+#: navigation/templates/navigation/faq.html:12
+msgid "Mr-K Escape Game"
+msgstr ""
+
+#: mr_k/settings/base.py:126
+msgid "English"
+msgstr "Anglais"
+
+#: mr_k/settings/base.py:127
+msgid "French"
+msgstr "Français"
+
+#: navigation/templates/navigation/home.html:19
+msgid "Mr-K Escape Game: The live escape room game"
+msgstr "Mr-K Escape Game: Le jeu d'évasion grandeur nature"
+
+#: navigation/templates/navigation/home.html:20
+msgid ""
+"An escape game is a real life adventure game where you and your team are "
+"locked in a room for a given amount of time.<br/><br/> The only option for "
+"you to find a way out is by completing your mission, which consists of "
+"solving a series of enigmas.</br></br> This is an amazing immersive "
+"fictional scenario where you become the heroes.</br><br/> At Mr-K Escape "
+"Game, each team gets 60 minutes to escape. A designated game host will look "
+"after your game and help you along the way with hints if needed.</br></br> "
+"Strength and knowledge will not help you here... Only curiosity and logic "
+"will be your friends to make the right deductions and succeed.</br></br> "
+"Come test yourself!"
+msgstr "Un escape game (jeu d'évasion) est un jeu d'aventure grandeur nature où vous et votre équipe êtes "
+"enfermés dans une pièce pendant un certain temps.<br/><br/> La seule option pour "
+"vous de trouver une issue est d'accomplir votre mission, qui consiste à "
+"résoudre une série d'énigmes.</br><br/> C'est un jeu immersif, vous êtes plongés  "
+"dans un univers fictif étonnant où vous devenez les héros.</br><br/> Au Mr-K Escape Game, "
+"chaque équipe dispose de 60 minutes pour s'échapper. Un hôte de jeu s'occupera "
+"de votre mission et vous aidera en cours de route avec des conseils si nécessaire.</br><br/> "
+"La force et les connaissances ne vous seront d'aucune utilité ici.... Seuls la curiosité et la logique "
+"seront vos amis pour faire les bonnes déductions et réussir. "
+"Venez vous tester !"
