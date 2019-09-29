@@ -8,6 +8,7 @@ mr_k/__pycache__/
 mr_k/media/
 mr_k/static/fonts/
 mr_k/settings/__pycache__/
+navigation/__pycache__/
 node_modules/
 
 # Ignore files 

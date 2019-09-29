@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% load extra_tags %}
+
+{% block meta %}
+<title>{% trans "Mission a" %} | {% trans "Mr-K Escape Game" %}</title>
+{% endblock %}
+
+{% block content %}
+<main role = "main">
+    <article>
+        {% for each_mission in missions %}
+            {% if each_mission.location.name|lower == location %}
+            <section class = "mission">
+                <h2 class = "mission__title">{{ each_mission.title }}</h2>
+                <div class = "mission__description">
+                <p>{{ each_mission.description|linebreaks }}</p>        
+                </div>
+                <div class = "polaroid">
+                    <img class = "polaroid__image" src = "{{ each_mission.picture.url }}" alt = ""/>
+                    <div class = "polaroid__caption">{{ each_mission.polaroid_caption }}</div>
+                </div>    
+                </div>
+                <div class = "mission__gauge">
+                    {% for key, value in gauge|get_dictionary_items:each_mission.title %}
+                    <div class = "gauge__container">
+                        <div class = "gauge__title">{{ key }}</div>
+                        <div class = "gauge__bars">
+                            {% for number in range %}
+                            <div class = {% if forloop.counter <= value %}"gauge__bar gauge__bar--full"{% else%}"gauge__bar gauge__bar--empty"{% endif %}></div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class = "mission__information">
+                    {% for key, value in information|get_dictionary_items:each_mission.title%}
+                        {% if key == "age" or key == "players"%}
+                        {{ key }}:{{ value.0 }}-{{value.1}}<br/>
+                        {% elif key == "duration" %}
+                        {{ key }}:{{ value }} mins<br/>
+                        {% else %}
+                        {{ key }}:{{ value }}<br/>
+                        {% endif %}
+                    {% endfor %} 
+                </div>
+                <div class = "mission__booking">Reservez</div>
+            </section>
+            {% endif %}
+        {% endfor %}   
+    </article>
+</main>
+{% endblock %}
+

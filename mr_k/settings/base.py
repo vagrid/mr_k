@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "livesync",
     "django.contrib.staticfiles",
 
+    "navigation.apps.NavigationConfig",
     "mission.apps.MissionConfig",    
 ]
 
